@@ -1,0 +1,43 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/corner_behavior_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:backgroundTint="@color/colorPrimary"
+        android:orientation="vertical"
+        app:behavior_expanded_width="175dp"
+        app:behavior_horizontal_peekHeight="94dp"
+        app:behavior_peekHeight="60dp"
+        app:layout_behavior="com.github.heyalex.cornersheet.behavior.CornerSheetBehavior"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.CornerShape"
+        tools:ignore="MissingPrefix">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:title="Corner Sample"
+            app:titleTextColor="@android:color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is sample to show how to add items to this part"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="40dp"
+            android:layout_marginTop="50dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_marginTop="50dp"/>
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
